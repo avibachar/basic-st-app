@@ -1,8 +1,8 @@
 import streamlit as st
-import openai
-from huggingface_hub import InferenceClient
+#import openai
+#from huggingface_hub import InferenceClient
 
-from apps import chatllm, home
+from apps import home #chatllm, 
 
 class MultiApp:
     def __init__(self):
@@ -45,8 +45,8 @@ class MultiApp:
             "echo": False, # Echo back the prompt in addition to the completion
             "user": "avi" # A string which will be included in the model's metadata
         }
-        st.session_state["Hugging_Face_api"] = InferenceClient() 
-        st.session_state["openai_api"] =  openai
+        #st.session_state["Hugging_Face_api"] = InferenceClient() 
+        #st.session_state["openai_api"] =  openai
 
 
     def renderSidebar(self):
@@ -91,7 +91,7 @@ app = MultiApp()
 
 # Add all your application here
 app.add_app("Home", home.app)
-app.add_app("Chat", chatllm.main)
+#app.add_app("Chat", chatllm.main)
 
 #app.add_app("Model", model.app)
 # The main app
