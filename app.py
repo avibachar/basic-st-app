@@ -27,7 +27,7 @@ class MultiApp:
         # Set default parameters
         st.session_state.ssPlatform = "Hugging Face"
         st.session_state.ssModel = "gpt-3.5-turbo"
-        st.session_state.ssAccess_Key = st.secrets["OPENAI_API_KEY"]
+        #st.session_state.ssAccess_Key = st.secrets["OPENAI_API_KEY"]
         st.session_state.ssTemperature = 0.5
 
         st.session_state["openai_params"] = {
