@@ -1,6 +1,6 @@
 import streamlit as st
-import openai
-#from huggingface_hub import InferenceClient
+#import openai
+from huggingface_hub import InferenceClient
 
 from apps import home #chatllm, 
 
